@@ -11,6 +11,7 @@
       "homepage": "https://developer-website.tld"
     }
   ],
+  "minimum-stability": "dev",
   "require": {
     "craftcms/cms": "^3.1.0"
   },
