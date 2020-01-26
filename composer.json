@@ -24,6 +24,7 @@
   "extra": {
     "handle": "powerapi",
     "name": "Power Api",
+    "type": "vcs",
     "documentationUrl": "https://github.com/phuongit0301/craft-power-api.git"
   }
 }
