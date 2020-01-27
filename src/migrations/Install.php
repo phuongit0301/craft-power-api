@@ -1,5 +1,5 @@
 <?php
-namespace phuongpt\powerapi;
+namespace phuongpt\powerapi\migrations;
 
 use Craft;
 use craft\db\Migration;
@@ -9,7 +9,7 @@ class Install extends Migration
     public function safeUp()
     {
         // Don't make the same config changes twice
-//        if (Craft::$app->projectConfig->get('plugins.powerapi', true) === null) {
+        if (Craft::$app->projectConfig->get('plugins.powerapi', true) === null) {
             if (!$this->db->tableExists('{{%products}}')) {
                 // create the products table
                 $this->createTable('{{%products}}', [
@@ -27,7 +27,7 @@ class Install extends Migration
                     $this->db->getForeignKeyName('{{%products}}', 'id'),
                     '{{%products}}', 'id', '{{%elements}}', 'id', 'CASCADE', null);
             }
-//        }
+        }
     }
 
     public function safeDown()
