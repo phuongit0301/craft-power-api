@@ -11,8 +11,6 @@
       "homepage": "https://developer-website.tld"
     }
   ],
-  "minimum-stability": "dev",
-  "prefer-stable": true,
   "require": {
     "craftcms/cms": "^3.1.0"
   },
@@ -23,7 +21,6 @@
   },
   "extra": {
     "handle": "powerapi",
-    "name": "Power Api",
-    "type": "path"
+    "name": "Power Api"
   }
 }
