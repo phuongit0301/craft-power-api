@@ -1,0 +1,9 @@
+{% import '_includes/forms' as forms %}
+
+{{ forms.textareaField({
+    label: 'Markdown Text',
+    instructions: 'The content here',
+    name: 'markdownText',
+    value: settings.markdownText,
+    first: true
+}) }}

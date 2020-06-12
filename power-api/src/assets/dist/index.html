@@ -1,0 +1,1 @@
+{% extends '_layouts/cp' %} {% set title = "Power Api"|t('powerapi') %} {% do view.registerAssetBundle("phuongpt\\powerapi\\assets\\BootstrapAsset") %} {% block content %} {% set products = craft.products.limit(10) %}<div id="root"></div>{% endblock %}<script src="bundle.js"></script>

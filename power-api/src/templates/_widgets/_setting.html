@@ -1,0 +1,15 @@
+{% import '_includes/forms' as forms %}
+{{ forms.textareaField({
+    label: 'Widget Markdown Text',
+    instructions: 'Widget The content here',
+    name: 'widgetMarkdownText',
+    value: '',
+    first: true,
+    id: id
+}) }}
+
+{% js %}
+        document.addEventListener("DOMContentLoaded", function(event) {
+            var textarea = document.getElementById("{{ namespacedId }}");
+        });
+{% endjs %}
