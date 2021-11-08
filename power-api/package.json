@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "graphiql": "^1.0.0",
+    "graphiql": "^1.4.7",
     "graphql": "^15.1.0",
     "react": "^16.13.1"
   },
